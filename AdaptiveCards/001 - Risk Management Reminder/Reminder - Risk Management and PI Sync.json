@@ -1,0 +1,88 @@
+{
+	"type": "message",
+	"attachments": [
+		{
+			"contentType": "application/vnd.microsoft.card.adaptive",
+			"contentUrl": null,
+			"content": {
+				"$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+				"type": "AdaptiveCard",
+				"version": "1.2",
+				"body": [
+					{
+						"type": "ColumnSet",
+						"columns": [
+							{
+								"type": "Column",
+								"items": [
+									{
+										"type": "Image",
+										"url": "https://creazilla-store.fra1.digitaloceanspaces.com/icons/3205862/triangle-danger-icon-md.png",
+										"size": "Small"
+									}
+								],
+								"width": "auto"
+							},
+							{
+								"type": "Column",
+								"items": [
+									{
+										"type": "TextBlock",
+										"size": "Large",
+										"text": "Please Review Risks before the next PI Sync",
+										"weight": "Bolder",
+										"color": "Accent"
+									}
+								],
+								"width": "stretch"
+							}
+						]
+					},
+					{
+						"type": "TextBlock",
+						"text": "Please update Escalated risks and open PI Risks with progress, as well as team risks that could threaten your own PI Objectives.",
+						"wrap": true,
+						"spacing": "Small"
+					},
+					{
+						"type": "FactSet",
+						"facts": [
+							{
+								"title": "Escalated Risks: ",
+								"value": "{{escalationNeeded}}"
+							},
+							{
+								"title": "Open PI Risks: ",
+								"value": "{{openpirisks}}"
+							},
+							{
+								"title": "Open Team Risks: ",
+								"value": "{{openTeamRisks}}"
+							}
+						]
+					}
+				],
+				"actions": [
+					{
+						"type": "Action.OpenUrl",
+						"title": "View Dashboard",
+						"url": "https://merative.atlassian.net/jira/dashboards/12799",
+						"role": "button"
+					},
+					{
+						"type": "Action.OpenUrl",
+						"title": "View Guidance",
+						"url": "https://merative.atlassian.net/wiki/spaces/APAM/pages/1400930339/Risk+Management+Guidance+-+Curam",
+						"role": "button"
+					},
+					{
+						"type": "Action.OpenUrl",
+						"title": "View Risks",
+						"url": "https://merative.atlassian.net/issues/?filter=24926",
+						"role": "button"
+					}
+				]
+			}
+		}
+	]
+}

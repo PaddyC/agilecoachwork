@@ -1,0 +1,68 @@
+{"type": "message",
+"attachments": [{
+	"contentType": "application/vnd.microsoft.card.adaptive",
+	"contentUrl": null,
+	"content": {
+		"$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+		"type": "AdaptiveCard",
+		"version": "1.5",
+		"body": [{
+			"type": "ColumnSet",
+			"columns": 
+				[{"type": "Column", "items": [{"type": "Image", "url": "https://creazilla-store.fra1.digitaloceanspaces.com/icons/3205862/triangle-danger-icon-md.png","size": "Small"}],"width": "auto"},
+				{"type": "Column", "items": [{"type": "TextBlock", "size": "Large", "text": "Next Five Customer Upgrades", "weight": "Bolder", "color": "Accent"}], "width": "stretch"}]},
+				{"type": "TextBlock","text": "NB these are the next 5, but there could be more in the pipeline. There are more details on the customer dashboard, click the button below.", "wrap": true,"spacing": "Small"},
+				{"type": "Table",
+					"columns": [{"width": 1},{"width": 1},{"width": 1},{"width": 1},{"width": 1}],
+					"rows": [{
+						"type": "TableRow",
+						"cells": [
+							{"type": "TableCell", "items": [{"type": "TextBlock", "text": "Customer", "horizontalAlignment": "left", "isSubtle": true, "weight": "bolder", "wrap": true, "spacing": "none" }]},
+							{"type": "TableCell", "items": [{"type": "TextBlock", "text": "Date", "horizontalAlignment": "center", "isSubtle": true, "weight": "bolder", "wrap": true, "spacing": "none"}]},
+							{"type": "TableCell", "items": [{"type": "TextBlock", "text": "Current Version", "horizontalAlignment": "center", "isSubtle": true, "weight": "bolder", "wrap": true, "spacing": "none"}]},
+							{"type": "TableCell", "items": [{"type": "TextBlock", "text": "Next Version", "horizontalAlignment": "center", "isSubtle": true, "weight": "bolder", "wrap": true, "spacing": "none"}]}
+						]}, 		
+						{
+						"type": "TableRow",
+						"cells": [
+							{"type": "TableCell", "items": [{"type": "TextBlock", "text": "{{customerOneName}}", "horizontalAlignment": "left",   "weight": "bolder", "spacing": "none", "color": "accent"}]},
+							{"type": "TableCell", "items": [{"type": "TextBlock", "text": "{{customerOneNextUpgradeDate}}", "horizontalAlignment": "center", "weight": "bolder", "spacing": "none", "wrap": true}]},
+							{"type": "TableCell", "items": [{"type": "TextBlock", "text": "{{customerOneCurrentVersion}}", "horizontalAlignment": "center", "weight": "bolder", "spacing": "none", "color": "attention","wrap": true,}]},
+							{"type": "TableCell", "items": [{"type": "TextBlock", "text": "{{customerOneNextVersion}}", "horizontalAlignment": "center", "weight": "bolder", "spacing": "none", "color": "attention","wrap": true,}]}
+						]}, 		
+						{
+						"type": "TableRow",
+						"cells": [
+							{"type": "TableCell", "items": [{"type": "TextBlock", "text": "{{customerTwoName}}", "horizontalAlignment": "left",   "weight": "bolder", "spacing": "none", "color": "accent"}]},
+							{"type": "TableCell", "items": [{"type": "TextBlock", "text": "{{customerTwoNextUpgradeDate}}", "horizontalAlignment": "center", "weight": "bolder", "spacing": "none", "wrap": true}]},
+							{"type": "TableCell", "items": [{"type": "TextBlock", "text": "{{customerTwoCurrentVersion}}", "horizontalAlignment": "center", "weight": "bolder", "spacing": "none", "color": "attention","wrap": true,}]},
+							{"type": "TableCell", "items": [{"type": "TextBlock", "text": "{{customerTwoNextVersion}}", "horizontalAlignment": "center", "weight": "bolder", "spacing": "none", "color": "attention","wrap": true,}]}
+						]}, 		
+						{
+						"type": "TableRow",
+						"cells": [
+							{"type": "TableCell", "items": [{"type": "TextBlock", "text": "{{customerThreeName}}", "horizontalAlignment": "left",   "weight": "bolder", "spacing": "none", "color": "accent"}]},
+							{"type": "TableCell", "items": [{"type": "TextBlock", "text": "{{customerThreeNextUpgradeDate}}", "horizontalAlignment": "center", "weight": "bolder", "spacing": "none", "wrap": true}]},
+							{"type": "TableCell", "items": [{"type": "TextBlock", "text": "{{customerThreeCurrentVersion}}", "horizontalAlignment": "center", "weight": "bolder", "spacing": "none", "color": "attention","wrap": true,}]},
+							{"type": "TableCell", "items": [{"type": "TextBlock", "text": "{{customerThreeNextVersion}}", "horizontalAlignment": "center", "weight": "bolder", "spacing": "none", "color": "attention","wrap": true,}]}
+						]}, 		
+						{
+						"type": "TableRow",
+						"cells": [
+							{"type": "TableCell", "items": [{"type": "TextBlock", "text": "{{customerFourName}}", "horizontalAlignment": "left",   "weight": "bolder", "spacing": "none", "color": "accent"}]},
+							{"type": "TableCell", "items": [{"type": "TextBlock", "text": "{{customerFourNextUpgradeDate}}", "horizontalAlignment": "center", "weight": "bolder", "spacing": "none", "wrap": true}]},
+							{"type": "TableCell", "items": [{"type": "TextBlock", "text": "{{customerFourCurrentVersion}}", "horizontalAlignment": "center", "weight": "bolder", "spacing": "none", "color": "attention","wrap": true,}]},
+							{"type": "TableCell", "items": [{"type": "TextBlock", "text": "{{customerFourNextVersion}}", "horizontalAlignment": "center", "weight": "bolder", "spacing": "none", "color": "attention","wrap": true,}]}
+						]}, 		
+						{
+						"type": "TableRow",
+						"cells": [
+							{"type": "TableCell", "items": [{"type": "TextBlock", "text": "{{customerFiveName}}", "horizontalAlignment": "left",   "weight": "bolder", "spacing": "none", "color": "accent"}]},
+							{"type": "TableCell", "items": [{"type": "TextBlock", "text": "{{customerFiveNextUpgradeDate}}", "horizontalAlignment": "center", "weight": "bolder", "spacing": "none", "wrap": true}]},
+							{"type": "TableCell", "items": [{"type": "TextBlock", "text": "{{customerFiveCurrentVersion}}", "horizontalAlignment": "center", "weight": "bolder", "spacing": "none", "color": "attention","wrap": true,}]},
+							{"type": "TableCell", "items": [{"type": "TextBlock", "text": "{{customerFiveNextVersion}}", "horizontalAlignment": "center", "weight": "bolder", "spacing": "none", "color": "attention","wrap": true,}]}
+						]}], "showGridLines": false},
+				{"type": "TextBlock","text": "","wrap": true,"spacing": "Small","isSubtle": "true"}],
+		"actions": [{"type": "Action.OpenUrl", "title": "Check Jira Data","role": "button", "url": "https://merative.atlassian.net/jira/dashboards/16004?maximized=33865"}]
+	}
+}]}

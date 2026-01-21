@@ -1,0 +1,309 @@
+{
+	"type": "message",
+	"attachments": [
+		{
+			"contentType": "application/vnd.microsoft.card.adaptive",
+			"contentUrl": null,
+			"content": {
+				"$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+				"type": "AdaptiveCard",
+				"version": "1.5",
+				"body": [
+					{
+						"type": "ColumnSet",
+						"columns": [
+							{
+								"type": "Column",
+								"items": [
+									{
+										"type": "Image",
+										"url": "https://dashboard.510.global/modules/core/img/data-dashboard.png",
+										"size": "Small"
+									}
+								],
+								"width": "auto"
+							},
+							{
+								"type": "Column",
+								"items": [
+									{
+										"type": "TextBlock",
+										"size": "Large",
+										"text": "PI Execution Metrics for {{currentSprint}}",
+										"weight": "Bolder",
+										"color": "Accent"
+									}
+								],
+								"width": "stretch"
+							}
+						]
+					},
+					{
+						"type": "TextBlock",
+						"text": "These metrics indicate our rate of completion of work as the PI progresses.",
+						"wrap": true,
+						"spacing": "Small"
+					},
+					{
+						"type": "Table",
+						"columns": [
+							{
+								"width": 1
+							},
+							{
+								"width": 1
+							},
+							{
+								"width": 1
+							},
+							{
+								"width": 1
+							}
+						],
+						"rows": [
+							{
+								"type": "TableRow",
+								"cells": [
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"color": "accent"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "To Do",
+												"horizontalAlignment": "center",
+												"isSubtle": true,
+												"weight": "bolder",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "In Progress",
+												"horizontalAlignment": "center",
+												"isSubtle": true,
+												"weight": "bolder",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "Done",
+												"horizontalAlignment": "center",
+												"isSubtle": true,
+												"weight": "bolder",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "TableRow",
+								"cells": [
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "PI Objectives",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"color": "accent",
+												"weight": "Bolder"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{pioToDo}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{pioInProgress}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"color": "warning",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{pioDone}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "TableRow",
+								"cells": [
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "Epics",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"color": "accent",
+												"weight": "Bolder"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{epicsToDo}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{epicsInProgress}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"color": "warning",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{epicsDone}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "TableRow",
+								"cells": [
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"color": "accent"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"color": "accent"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"color": "accent"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"color": "accent"
+											}
+										]
+									}
+								]
+							}
+						],
+						"showGridLines": false
+					},
+					{
+						"type": "TextBlock",
+						"text": "Wherever possible with your teams, please prioritise finishing work that is already started over starting something new.",
+						"wrap": true,
+						"spacing": "Small",
+						"isSubtle": "true"
+					}
+				],
+				"actions": [
+					{
+						"type": "Action.OpenUrl",
+						"title": "PI Execution Dashboard",
+						"url": "https://merative.atlassian.net/jira/dashboards/12799",
+						"role": "button"
+					}
+				]
+			}
+		}
+	]
+}

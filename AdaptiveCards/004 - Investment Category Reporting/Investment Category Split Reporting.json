@@ -1,0 +1,116 @@
+{
+	"type": "message",
+	"attachments": [
+		{
+			"contentType": "application/vnd.microsoft.card.adaptive",
+			"contentUrl": null,
+			"content": {
+				"$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+				"type": "AdaptiveCard",
+				"version": "1.5",
+				"body": [
+					{
+						"type": "ColumnSet",
+						"columns": [
+							{
+								"type": "Column",
+								"items": [
+									{
+										"type": "Image",
+										"url": "https://images.all-free-download.com/images/graphiclarge/info_sign_icon_flat_contrast_black_white_isolated_i_texts_outline_6921975.jpg",
+										"size": "Small"
+									}
+								],
+								"width": "auto"
+							},
+							{
+								"type": "Column",
+								"items": [
+									{
+										"type": "TextBlock",
+										"size": "Large",
+										"text": "Investment Category Data: {{currentSprint}}",
+										"weight": "Bolder",
+										"color": "Accent"
+									}
+								],
+								"width": "stretch"
+							}
+						]
+					},
+					{
+						"type": "TextBlock",
+						"text": "NB percentages can change during the PI if work is added or removed from Sprints.",
+						"wrap": true,
+						"spacing": "Small"
+					},
+					{
+						"title": "Investment Categories",
+						"data": [
+					{
+						"color": "attention",
+						"legend": "Feature",
+						"value": "{{totalFeature}}"
+					},
+					{
+						"color": "warning",
+						"legend": "Maintenance",
+						"value": "{{totalMaintenance}}"
+					},
+					{
+						"color": "good",
+						"legend": "None",
+						"value": "{{totalNone}}"
+					},
+					{
+						"color": "categoricalLightBlue",
+						"legend": "Tech Debt",
+						"value": "{{totalTechDebt}}"
+					},
+					{
+						"color": "categoricalPurple",
+						"legend": "Tech Investment",
+						"value": "{{totalTechInvest}}"
+					}
+				],
+					"type": "Chart.Pie",
+					"colorSet": "diverging"
+				},
+					{
+						"type": "FactSet",
+						"facts": [
+							{
+								"title": "Feature: ",
+								"value": "{{featurePercentage}}%"
+							},
+							{
+								"title": "Maintenance: ",
+								"value": "{{maintenancePercentage}}%"
+							},
+							{
+								"title": "None: ",
+								"value": "{{nonePercentage}}%"
+							},
+							{
+								"title": "Tech Debt: ",
+								"value": "{{techDebtPercentage}}%"
+							},
+							{
+								"title": "Tech Investment: ",
+								"value": "{{techInvestPercentage}}%"
+							}
+						]
+					}
+				],
+				"actions": [
+					{
+						"type": "Action.OpenUrl",
+						"title": "PI Execution Dashboard",
+						"url": "https://merative.atlassian.net/jira/dashboards/12799",
+						"role": "button"
+					}
+				]
+			}
+		}
+	]
+}

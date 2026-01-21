@@ -1,0 +1,217 @@
+{
+	"type": "message",
+	"attachments": [
+		{
+			"contentType": "application/vnd.microsoft.card.adaptive",
+			"contentUrl": null,
+			"content": {
+				"$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+				"type": "AdaptiveCard",
+				"version": "1.5",
+				"body": [
+					{
+						"type": "ColumnSet",
+						"columns": [
+							{
+								"type": "Column",
+								"items": [
+									{
+										"type": "Image",
+										"url": "https://images.all-free-download.com/images/graphiclarge/info_sign_icon_flat_contrast_black_white_isolated_i_texts_outline_6921975.jpg",
+										"size": "Small"
+									}
+								],
+								"width": "auto"
+							},
+							{
+								"type": "Column",
+								"items": [
+									{
+										"type": "TextBlock",
+										"size": "Large",
+										"text": "Sprint Completion",
+										"weight": "Bolder",
+										"color": "Accent"
+									}
+								],
+								"width": "stretch"
+							}
+						]
+					},
+					{
+						"type": "TextBlock",
+						"text": "As we move from one sprint to the next this week, I just wanted to share these 3 reminders:",
+						"wrap": true,
+						"spacing": "Small"
+					},
+					{
+						"type": "Table",
+						"columns": [
+							{
+								"width": 2
+							},
+							{
+								"width": 1
+							},
+							{
+								"width": 3
+							}
+						],
+						"rows": [
+							{
+								"type": "TableRow",
+								"cells": [
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "1. Sprint Reviews ",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"color": "good",
+												"weight": "Bolder",
+												"wrap": true,
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "Demos ",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"weight": "Bolder",
+												"wrap": true,
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "Please look out for demos that are candidates to bring to the PI Sync.",
+												"horizontalAlignment": "left",
+												"wrap": true,
+												"weight": "default",
+												"spacing": "none"
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "TableRow",
+								"cells": [
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "2. In Planning ",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"color": "warning",
+												"weight": "Bolder",
+												"wrap": true,
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "WIP",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"weight": "Bolder",
+												"wrap": true,
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "Please prioritise completing epics that are in progress over starting new ones",
+												"horizontalAlignment": "left",
+												"wrap": true,
+												"spacing": "none",
+												"weight": "Bolder"
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "TableRow",
+								"cells": [
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "3. In Retros",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"color": "attention",
+												"weight": "Bolder",
+												"wrap": true,
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "AI Stories",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"weight": "Bolder",
+												"wrap": true,
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "Please ask teams to share any stories of AI Assists (see link below)",
+												"horizontalAlignment": "left",
+												"wrap": true,
+												"spacing": "none",
+												"weight": "Bolder"
+											}
+										]
+									}
+								]
+							}
+						],
+						"showGridLines": false
+					},
+					{
+						"type": "TextBlock",
+						"text": "Thanks! Give a shout any time if you would like coaching support.",
+						"wrap": true,
+						"spacing": "Small"
+					}
+				],
+				"actions": [
+					{
+						"type": "Action.OpenUrl",
+						"title": "AI Stories",
+						"url": "https://merative.atlassian.net/wiki/spaces/APAM/pages/1392476195/AI+Assisted+Stories+and+Bugs",
+						"role": "button"
+					}
+				]
+			}
+		}
+	]
+}

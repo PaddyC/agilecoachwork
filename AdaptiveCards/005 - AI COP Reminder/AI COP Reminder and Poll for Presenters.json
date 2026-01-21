@@ -1,0 +1,93 @@
+{
+	"type": "message",
+	"attachments": [
+		{
+			"contentType": "application/vnd.microsoft.card.adaptive",
+			"contentUrl": null,
+			"content": {
+				"$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+				"type": "AdaptiveCard",
+				"version": "1.5",
+				"body": [
+					{
+						"type": "ColumnSet",
+						"columns": [
+							{
+								"type": "Column",
+								"items": [
+									{
+										"type": "Image",
+										"url": "https://cdn.vectorstock.com/i/1000x1000/46/16/robot-vector-39264616.jpg",
+										"size": "Small"
+									}
+								],
+								"width": "auto"
+							},
+							{
+								"type": "Column",
+								"items": [
+									{
+										"type": "TextBlock",
+										"size": "Large",
+										"text": "AI COP Reminder",
+										"weight": "Bolder",
+										"color": "Accent"
+									}
+								],
+								"width": "stretch"
+							}
+						]
+					},
+					{
+						"type": "TextBlock",
+						"text": "The next AI Community of Practice session is happening this week. Would you like to get involved?",
+						"wrap": true,
+						"spacing": "Small"
+					},
+					{
+						"type": "FactSet",
+						"facts": [
+							{
+								"title": "Stories ",
+								"value": "How is AI helping your day-to-day?"
+							},
+							{
+								"title": "Demos ",
+								"value": "Any work in progress? "
+							},
+							{
+								"title": "Ideas ",
+								"value": "Inventions brewing somewhere?"
+							},
+							{
+								"title": "Questions ",
+								"value": "All questions are welcome!"
+							}
+						]
+					},
+					{
+						"type": "TextBlock",
+						"text": "Have a look at the links here and give a shout to get involved.",
+						"wrap": true,
+						"color": "accent",
+						"spacing": "Small"
+					}
+				],
+				"actions": [
+					{
+						"type": "Action.OpenUrl",
+						"title": "Teams Channel",
+						"url": "https://teams.microsoft.com/l/channel/19%3A531dfc9d4c28402e812c70b5b4615b51%40thread.tacv2/C%C3%BAram%20AI%20Community%20of%20Practice?groupId=6b5dae01-2b48-4cd7-bdc5-37308d83c88d&tenantId=ceaa63aa-5d5c-4c7d-94b0-02f9a3ab6a8c",
+						"role": "button"
+					},
+					{
+						"type": "Action.OpenUrl",
+						"title": "Whiteboard",
+						"url": "https://merative.atlassian.net/wiki/spaces/APAM/whiteboard/1371504792",
+						"role": "button"
+					}
+				]
+			}
+		}
+	]
+}

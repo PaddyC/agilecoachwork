@@ -1,0 +1,218 @@
+{
+	"type": "message",
+	"attachments": [
+		{
+			"contentType": "application/vnd.microsoft.card.adaptive",
+			"contentUrl": null,
+			"content": {
+				"$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+				"type": "AdaptiveCard",
+				"version": "1.2",
+				"body": [
+					{
+						"type": "ColumnSet",
+						"columns": [
+							{
+								"type": "Column",
+								"items": [
+									{
+										"type": "Image",
+										"url": "https://images.all-free-download.com/images/graphiclarge/info_sign_icon_flat_contrast_black_white_isolated_i_texts_outline_6921975.jpg",
+										"size": "Small"
+									}
+								],
+								"width": "auto"
+							},
+							{
+								"type": "Column",
+								"items": [
+									{
+										"type": "TextBlock",
+										"size": "Large",
+										"text": "PI Dashboard usability enhancements",
+										"weight": "Bolder",
+										"color": "Accent"
+									}
+								],
+								"width": "stretch"
+							}
+						]
+					},
+					{
+						"type": "TextBlock",
+						"text": "Static text panels like 'scope changes' and 'capacity plans and confidence vote' respond to the team filter, and are easier to edit.",
+						"wrap": true,
+						"spacing": "Small"
+					},
+					{
+						"type": "Table",
+						"columns": [
+							{
+								"width": 1
+							},
+							{
+								"width": 1
+							},
+							{
+								"width": 1
+							}
+						],
+						"rows": [
+							{
+								"type": "TableRow",
+								"cells": [
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "Image",
+												"size": "small",
+												"url": "https://clipground.com/images/blue-video-icon-clipart-1.jpg",
+												"altText": "Video"
+											}
+										]
+									},
+									{
+										"type": "TableCell"
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "Status",
+												"horizontalAlignment": "right",
+												"isSubtle": true,
+												"wrap": true
+											},
+											{
+												"type": "TextBlock",
+												"text": "AVAILABLE",
+												"horizontalAlignment": "right",
+												"spacing": "none",
+												"size": "large",
+												"color": "good",
+												"wrap": true
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "TableRow",
+								"cells": [
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "Videos",
+												"isSubtle": true,
+												"weight": "bolder",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell"
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "Link",
+												"horizontalAlignment": "right",
+												"isSubtle": true,
+												"weight": "bolder",
+												"wrap": true
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "TableRow",
+								"cells": [
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "Demo 1 - Execution Dashboard",
+												"spacing": "small",
+												"wrap": true
+											}
+										]
+									},
+									{
+										"type": "TableCell"
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "[Video - 02:02](https://merative-my.sharepoint.com/:v:/p/pcorry/EeQiwrUPMbNBuCrOQcajfwkBb7csRY4a8Pzyj3TXUrdgJg?e=AViaKC)",
+												"horizontalAlignment": "right",
+												"spacing": "small",
+												"wrap": true
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "TableRow",
+								"cells": [
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "Demo 2 - Planning Dashboard",
+												"spacing": "small",
+												"wrap": true
+											}
+										]
+									},
+									{
+										"type": "TableCell"
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "[Video - 01:27](https://merative-my.sharepoint.com/:v:/p/pcorry/EZ-s-JBOUQdLhSP1MajdKacB-WpAwSAXr-k-6w-RhuBbfQ?e=aP1bLh)",
+												"horizontalAlignment": "right",
+												"spacing": "small",
+												"wrap": true
+											}
+										]
+									}
+								]
+							}
+						],
+						"showGridLines": false
+					}
+				],
+				"actions": [
+					{
+						"type": "Action.OpenUrl",
+						"title": "Execution Dashboard",
+						"url": "https://merative.atlassian.net/jira/dashboards/12799",
+						"role": "button"
+					},
+					{
+						"type": "Action.OpenUrl",
+						"title": "Planning Dashboard",
+						"url": "https://merative.atlassian.net/jira/dashboards/12736",
+						"role": "button"
+					}
+				]
+			}
+		}
+	]
+}

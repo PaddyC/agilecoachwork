@@ -1,0 +1,559 @@
+{
+	"type": "message",
+	"attachments": [
+		{
+			"contentType": "application/vnd.microsoft.card.adaptive",
+			"contentUrl": null,
+			"content": {
+				"$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+				"type": "AdaptiveCard",
+				"version": "1.5",
+				"body": [
+					{
+						"type": "ColumnSet",
+						"columns": [
+							{
+								"type": "Column",
+								"items": [
+									{
+										"type": "Image",
+										"url": "https://creazilla-store.fra1.digitaloceanspaces.com/icons/3205862/triangle-danger-icon-md.png",
+										"size": "Small"
+									}
+								],
+								"width": "auto"
+							},
+							{
+								"type": "Column",
+								"items": [
+									{
+										"type": "TextBlock",
+										"size": "Large",
+										"text": "Globalisation Requirements for {{currentRelease}}",
+										"weight": "Bolder",
+										"color": "Accent"
+									}
+								],
+								"width": "stretch"
+							}
+						]
+					},
+					{
+						"type": "TextBlock",
+						"text": "{{currentRelease}} will go live on {{currentReleaseDate}}. Please ensure all globalisation requirements are clarified, by setting this flag to 'Yes' or No', prior to the ICT Cycle.",
+						"wrap": true,
+						"spacing": "Small"
+					},
+					{
+						"type": "Table",
+						"columns": [
+							{
+								"width": 1
+							},
+							{
+								"width": 1
+							},
+							{
+								"width": 1
+							},
+							{
+								"width": 1
+							}
+						],
+						"rows": [
+							{
+								"type": "TableRow",
+								"cells": [
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"color": "accent"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "Yes",
+												"horizontalAlignment": "center",
+												"isSubtle": true,
+												"weight": "bolder",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "No",
+												"horizontalAlignment": "center",
+												"isSubtle": true,
+												"weight": "bolder",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "Empty",
+												"horizontalAlignment": "center",
+												"isSubtle": true,
+												"weight": "bolder",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "TableRow",
+								"cells": [
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "UI Wizards",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"color": "accent",
+												"weight": "Bolder"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{globalisationYesUIWizards}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{globalisationNoUIWizards}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"color": "good",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{globalisationEmptyUIWizards}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"color": "attention",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "TableRow",
+								"cells": [
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "Firebirds",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"color": "accent",
+												"weight": "Bolder"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{globalisationYesFirebirds}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{globalisationNoFirebirds}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"color": "good",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{globalisationEmptyFirebirds}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"color": "attention",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "TableRow",
+								"cells": [
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "Doozers",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"color": "accent",
+												"weight": "Bolder"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{globalisationYesDoozers}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{globalisationNoDoozers}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"color": "good",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{globalisationEmptyDoozers}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"color": "attention",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "TableRow",
+								"cells": [
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "Hornbills",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"color": "accent",
+												"weight": "Bolder"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{globalisationYesHornbills}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{globalisationNoHornbills}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"color": "good",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{globalisationEmptyHornbills}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"color": "attention",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "TableRow",
+								"cells": [
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "Java Mod",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"color": "accent",
+												"weight": "Bolder"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{globalisationYesJavaMod}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{globalisationNoJavaMod}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"color": "good",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{globalisationEmptyJavaMod}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"color": "attention",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "TableRow",
+								"cells": [
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "Other Teams",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"color": "accent",
+												"weight": "Bolder"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{globalisationYesOther}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{globalisationNoOther}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"color": "good",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{globalisationEmptyOther}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"color": "attention",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "TableRow",
+								"cells": [
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"color": "accent"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"color": "accent"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"color": "accent"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"color": "accent"
+											}
+										]
+									}
+								]
+							}
+						],
+						"showGridLines": false
+					},
+					{
+						"type": "TextBlock",
+						"text": "",
+						"wrap": true,
+						"spacing": "Small",
+						"isSubtle": "true"
+					}
+				],
+				"actions": [
+					{
+						"type": "Action.OpenUrl",
+						"title": "Review Related Issues",
+						"url": "https://merative.atlassian.net/jira/dashboards/11842",
+						"role": "button"
+					},
+					{
+						"type": "Action.OpenUrl",
+						"title": "TVT-Focals Teams Channel",
+						"url": "https://teams.microsoft.com/l/channel/19%3A1133782cdbbb4d4b927fc2e11e047a59%40thread.tacv2/TVT-Focals?groupId=6b5dae01-2b48-4cd7-bdc5-37308d83c88d&tenantId=ceaa63aa-5d5c-4c7d-94b0-02f9a3ab6a8c",
+						"role": "button"
+					},
+					{
+						"type": "Action.OpenUrl",
+						"title": "Globalisation Guide",
+						"url": "https://merative.atlassian.net/wiki/spaces/SPM/pages/1412038845/Curam+PD+Weekly+Release+Check-in+-+Q3-2025?userFullName=DARREN%20KENNY#Globalisation",
+						"role": "button"
+					}
+				]
+			}
+		}
+	]
+}

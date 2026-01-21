@@ -1,0 +1,548 @@
+{
+	"type": "message",
+	"attachments": [
+		{
+			"contentType": "application/vnd.microsoft.card.adaptive",
+			"contentUrl": null,
+			"content": {
+				"$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+				"type": "AdaptiveCard",
+				"version": "1.5",
+				"body": [
+					{
+						"type": "ColumnSet",
+						"columns": [
+							{
+								"type": "Column",
+								"items": [
+									{
+										"type": "Image",
+										"url": "https://creazilla-store.fra1.digitaloceanspaces.com/icons/3205862/triangle-danger-icon-md.png",
+										"size": "Small"
+									}
+								],
+								"width": "auto"
+							},
+							{
+								"type": "Column",
+								"items": [
+									{
+										"type": "TextBlock",
+										"size": "Large",
+										"text": "External Release Notes for {{currentRelease}}",
+										"weight": "Bolder",
+										"color": "Accent"
+									}
+								],
+								"width": "stretch"
+							}
+						]
+					},
+					{
+						"type": "TextBlock",
+						"text": "{{currentRelease}} will go live on {{currentReleaseDate}}. The expectation is to have all ERNs drafted by {{draftCompletionDate}} and all reviews completed by {{reviewCompletionDate}}, at the latest.",
+						"wrap": true,
+						"spacing": "Small"
+					},
+					{
+						"type": "Table",
+						"columns": [
+							{
+								"width": 1
+							},
+							{
+								"width": 1
+							},
+							{
+								"width": 1
+							},
+							{
+								"width": 1
+							}
+						],
+						"rows": [
+							{
+								"type": "TableRow",
+								"cells": [
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"color": "accent"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "Required",
+												"horizontalAlignment": "center",
+												"isSubtle": true,
+												"weight": "bolder",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "Signed Off",
+												"horizontalAlignment": "center",
+												"isSubtle": true,
+												"weight": "bolder",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "Not Signed Off",
+												"horizontalAlignment": "center",
+												"isSubtle": true,
+												"weight": "bolder",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "TableRow",
+								"cells": [
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "UI Wizards",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"color": "accent",
+												"weight": "Bolder"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{ernsRequiredUIWizards}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{ernsSignedOffUIWizards}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"color": "good",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{ernsNotSignedOffUIWizards}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"color": "attention",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "TableRow",
+								"cells": [
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "Firebirds",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"color": "accent",
+												"weight": "Bolder"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{ernsRequiredFirebirds}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{ernsSignedOffFirebirds}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"color": "good",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{ernsNotSignedOffFirebirds}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"color": "attention",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "TableRow",
+								"cells": [
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "Doozers",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"color": "accent",
+												"weight": "Bolder"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{ernsRequiredDoozers}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{ernsSignedOffDoozers}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"color": "good",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{ernsNotSignedOffDoozers}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"color": "attention",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "TableRow",
+								"cells": [
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "Hornbills",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"color": "accent",
+												"weight": "Bolder"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{ernsRequiredHornbills}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{ernsSignedOffHornbills}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"color": "good",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{ernsNotSignedOffHornbills}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"color": "attention",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "TableRow",
+								"cells": [
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "Java Mod",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"color": "accent",
+												"weight": "Bolder"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{ernsRequiredJavaMod}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{ernsSignedOffJavaMod}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"color": "good",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{ernsNotSignedOffJavaMod}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"color": "attention",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "TableRow",
+								"cells": [
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "Other Teams",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"color": "accent",
+												"weight": "Bolder"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{ernsRequiredOther}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{ernsSignedOffOther}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"color": "good",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"text": "{{ernsNotSignedOffOther}}",
+												"horizontalAlignment": "center",
+												"weight": "bolder",
+												"color": "attention",
+												"wrap": true,
+												"spacing": "none"
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "TableRow",
+								"cells": [
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"color": "accent"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"color": "accent"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"color": "accent"
+											}
+										]
+									},
+									{
+										"type": "TableCell",
+										"items": [
+											{
+												"type": "TextBlock",
+												"horizontalAlignment": "left",
+												"spacing": "none",
+												"color": "accent"
+											}
+										]
+									}
+								]
+							}
+						],
+						"showGridLines": false
+					},
+					{
+						"type": "TextBlock",
+						"text": "",
+						"wrap": true,
+						"spacing": "Small",
+						"isSubtle": "true"
+					}
+				],
+				"actions": [
+					{
+						"type": "Action.OpenUrl",
+						"title": "Review ERNs",
+						"url": "https://merative.atlassian.net/jira/dashboards/12799",
+						"role": "button"
+					}
+					
+				]
+			}
+		}
+	]
+}
